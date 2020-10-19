@@ -1,23 +1,22 @@
 <!--
---  Project Name     : Project title - Blog Page
+--  Project Name     : Project title - Home Page
 --  Author Name      : Ambit prasad pati
 --  Date of Creation : 04-October-2020
 --  Description      : This is a home page which has obtain information about the company .
                        Header Section 		  - icon, logo,navbar, Request an Appointment and Request a Quotation
                        Slide Section  	 	  - slide images and Slideing process
-                       Section1               - icons and information
-                       Section2       		  - information about SASMITA GRAPHIC and it contain one image
-                       Section3       		  - Request an Appointment
-                       Service Section        - It contain services
-                       Our teams Section 	  - It contain information about Our team
-                       Blog Section 	 	  - It contain Blogs
-                       Clients review Section - It contain what Our Clients Says
-                       Footer				  - It contain Footer                      
+					   Section1               - icons and information
+					   Section2       		  - information about SASMITA GRAPHIC and it contain one image
+					   Section3       		  - Request an Appointment
+					   Service Section        - It contain services
+					   Our teams Section 	  - It contain information about Our team
+					   Blog Section 	 	  - It contain Blogs
+					   Clients review Section - It contain what Our Clients Says
+					   Footer				  - It contain Footer                      
 --
 --  Modifications :
 --    Modification Number - MOD0001 : dd-mm-yyyy - modification details
 -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -52,7 +51,11 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/defined.css">
 
-
+	<style>
+		.dropdown-item{
+			padding-left: 5px;
+		}
+	</style>
 </head>
 <body>
 	<!-- Header Section -->
@@ -83,8 +86,8 @@
 					</p>
 				</div>
 				<div class="col-sm-12 col-md-6 col-lg-7 d-flex topper align-items-center text-lg-right justify-content-end">
-					<p class="mb-0 register-link"><a href="#" class="btn btn-primary">Request a Quotation</a></p> &nbsp;
-					<p class="mb-0 register-link"><a href="#" class="btn btn-primary">Request an Appointment</a></p>
+					<p class="mb-0 register-link"><a href="contact.html#Quotation" class="btn btn-primary">Request a Quotation</a></p> &nbsp;
+					<p class="mb-0 register-link"><a href="contact.html#Appointment" class="btn btn-primary">Request an Appointment</a></p>
 				</div>
 			</div>
 		</div>
@@ -93,7 +96,11 @@
 	
 	<!-- Navbar -->
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<div class="logo"> <a href="index.html"><img src="images/sasmita-graphics-logo2.png" alt="logo"/>sasmitagraphics Logo</a></div>
+		<a class="navbar-brand" href="index.html">
+			<img src="images/sasmita-graphics-logo2.png" alt="logo" 
+			style="width: 40px; height: 40px;"/>
+			Sasmita Graphics
+		</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" 
 		data-target="#navbar" aria-controls="navbars" 
 		aria-expanded="false" aria-label="Toggle navigation">
@@ -128,7 +135,7 @@
 					</a>
 					<div class="dropdown-menu mega-area" aria-labelledby="mega-one">
 						<div class="row">
-							<div class="col-sm-6 col-lg-3">
+							<div class="col-sm-4 col-lg-2">
 								<h5 style="border-bottom: 5px solid #039ee3;">Web Desgining</h5>
 								<a href="#" class="dropdown-item">For Small Business</a>
 								<a href="#" class="dropdown-item">For Corporate</a>
@@ -136,38 +143,50 @@
 								<a href="#" class="dropdown-item">CMS</a>
 								<a href="#" class="dropdown-item">Web Application</a>
 							</div>
-							<div class="col-sm-6 col-lg-3">
+							<div class="col-sm-4 col-lg-2">
 								<h5 style="border-bottom: 5px solid #039ee3;">Graphic Desgin</h5>
 								<a href="#" class="dropdown-item">Goto Graphic Gallery</a>
 							</div>
-							<div class="col-sm-6 col-lg-3">
+							<div class="col-sm-4 col-lg-2">
 								<h5 style="border-bottom: 5px solid #039ee3;">Logo & Brochure</h5>
 								<a href="#" class="dropdown-item">Logo Design</a>
 								<a href="#" class="dropdown-item">Brochure Design</a>
 								<a href="#" class="dropdown-item">Branding</a>
 							</div>
-							<div class="col-sm-6 col-lg-3">
-								<h5 style="border-bottom: 5px solid #039ee3;">Logo & Brochure</h5>
-								<a href="#" class="dropdown-item">Logo Design</a>
-								<a href="#" class="dropdown-item">Brochure Design</a>
-								<a href="#" class="dropdown-item">Branding</a>
+							<div class="col-sm-4 col-lg-2">
+								<h5 style="border-bottom: 5px solid #039ee3;">Digital Marketing</h5>
+								<a href="#" class="dropdown-item">SEO Services</a>
+								<a href="#" class="dropdown-item">SocialMedia Marketing</a>
+								<a href="#" class="dropdown-item">PPC Management</a>
+								<a href="#" class="dropdown-item">Local SEO</a>
+								<a href="#" class="dropdown-item">Content Marketing Services</a>
+							</div>
+							<div class="col-sm-4 col-lg-2">
+								<h5 style="border-bottom: 5px solid #039ee3;">Event Video</h5>
+								<a href="#" class="dropdown-item">Examplary Video</a>
+								<a href="#" class="dropdown-item">Album Video</a>
+							</div>
+							<div class="col-sm-4 col-lg-2">
+								<h5 style="border-bottom: 5px solid #039ee3;">Future Plans</h5>
+								<a href="#" class="dropdown-item">Stay tuned...</a>
 							</div>
 						</div>
 					</div>
 				</li>
 				<li class="nav-item unactive">
-					<a class="nav-link" href="#">Clients</a>
-				</li>
-				<li class="nav-item active">
-					<a class="nav-link" href="blog.html">Blog</a>
+					<a class="nav-link" href="index.html#Clients">Clients</a>
 				</li>
 				<li class="nav-item unactive">
+					<a class="nav-link" href="blog.html">Blog</a>
+				</li>
+				<li class="nav-item active">
 					<a class="nav-link" href="contact.html">Contact Us</a>
 				</li>
 			</ul>
 		</div>
 	</nav>
 	<!-- End of Navbar-->
+
   <!-- Blog Section	 -->
  
 <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_1.jpg');" data-stellar-background-ratio="0.5">
@@ -227,7 +246,7 @@
 <!-- Section End -->
 <!-- Section -->
 <section>
-  <div class="container">
+  <div class="container " id="Quotation">
     <div class="row d-flex contact-info mb-5">
       <div class="col-md-12 col-md-offset-1">
         <form action="#" class="bg-light p-5 contact-form">
@@ -281,7 +300,7 @@
 
 <!-- Section -->
 <section>
-  <div class="container">
+  <div class="container" id="Appointment">
     <div class="row d-flex contact-info mb-5">
       <div class="col-md-12 col-md-offset-1">
         <form action="#" class="bg-light p-5 contact-form">
@@ -339,9 +358,10 @@
       <div class="col-lg col-md-6">
         <div class="ftco-footer-widget">
           <h2 class="ftco-heading-2 logo d-flex align-items-center">
-            <a href="#">
-              <span class="flaticon-health flaticon"></span>
-              <span class="txt-white">Sasmita Graphics</span>
+            <a  href="index.html">
+              <img src="images/sasmita-graphics-logo2.png" alt="logo" 
+              style="margin-bottom: 10px; margin-left: 60px; width: 40px; height: 40px;"/><br>
+              Sasmita Graphics
             </a>
           </h2>
           <p>
@@ -383,23 +403,23 @@
         <div class="ftco-footer-widget">
           <h2 class="ftco-heading-2"><span class="txt-white">Additional Links</span></h2>
           <ul class="list-unstyled">
-            <li><a href="#">
+            <li><a href="index.html">
               <span class="fa fa-chevron-right mr-2"></span>
               <font class="txt-666">Home</font>
             </a></li>
-            <li><a href="#">
+            <li><a href="about_company.html">
               <span class="fa fa-chevron-right mr-2"></span>
               <font class="txt-666">About Company</font>
             </a></li>
-            <li><a href="#">
+            <li><a href="about_team.html">
               <span class="fa fa-chevron-right mr-2"></span>
               <font class="txt-666">About Team</font>
             </a></li>
-            <li><a href="#">
+            <li><a href="index.html#Clients">
               <span class="fa fa-chevron-right mr-2"></span>
               <font class="txt-666">Clients</font>
             </a></li>
-            <li><a href="#">
+            <li><a href="contact.html#Quotation">
               <span class="fa fa-chevron-right mr-2"></span>
               <font class="txt-666">Request Quotation</font>
             </a></li>
@@ -411,15 +431,15 @@
         <div class="ftco-footer-widget">
           <h2 class="ftco-heading-2"><span class="txt-white">Portfolio</span></h2>
           <ul class="list-unstyled">
-            <li><a href="#">
+            <li><a href="Portfolio.html">
               <span class="fa fa-chevron-right mr-2"></span>
               <font class="txt-666">Web Desgining</font>
             </a></li>
-            <li><a href="#">
+            <li><a href="Portfolio.html">
               <span class="fa fa-chevron-right mr-2"></span>
               <font class="txt-666">Logo & Brochure</font>
             </a></li>
-            <li><a href="#">
+            <li><a href="Portfolio.html">
               <span class="fa fa-chevron-right mr-2"></span>
               <font class="txt-666">Digital Marketing</font>
             </a></li>
@@ -442,7 +462,7 @@
                   </font>
                 </span>
               </li>
-              <li><a href="#">
+              <li><a href="contact.html#Appointment">
                 <span class="fa fa-chevron-right mr-2"></span>
                 <font class="txt-666">Request an Appointment</font>
               </a></li>
@@ -472,8 +492,6 @@
       </div>
     </div>
   </footer>
-
-
 
 <!-- loader -->
 <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
